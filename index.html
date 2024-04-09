@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <center>
+        <img src="LOGO.png" class="logo">
+        </center>
+        <h1 class="title">Awaken Coffee</h>
+        <h3 class="sub-title">Awaken your senses</h3>
+        <p class="info"><em>an establishment that primarily serves various types 
+                of coffee, espresso, latte, macchiato,and cappuccino</em></p>
+    <div class="coffee-shop">
+        <h1>Form</h1>
+        <form class="form">
+            <input type="text" placeholder="Name" class="input-field">
+            <input type="text" placeholder="Email" class="input-field">
+            <input type="text" placeholder="Age" class="input-field">
+        </form>
+        <h2>Type of coffee</h2>
+        <div id="dropdown">
+            <button class="dropdown-toggle">
+                <span>Menu</span>
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <ul class="menu">
+                <li class="menu-item"><a href="#">Cappuccino</a></li>
+                <li class="menu-item"><a href="#">Macchiato</a></li>
+                <li class="menu-item dropdown">
+                    <a href="#" class="submenu-toggle">
+                        <span>Latte</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="#">Caramel latte</a></li>
+                        <li class="submenu-item"><a href="#">Mocha latte</a></li>
+                        <li class="submenu-item"><a href="#">Vanilla latte</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#">Chocolate</a></li>
+                <li class="menu-item dropdown">
+                    <a href="#" class="submenu-toggle">
+                        <span>Espresso</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="#">Americano</a></li>
+                        <li class="submenu-item"><a href="#">Ristretto</a></li>
+                        <li class="submenu-item"><a href="#">Doppio</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <form class="form">
+            <fieldset class="legacy-form-row">
+                <legend>Mode of Payment</legend>
+                <input id="mode-p-1" name="mode-p" type="radio" value="cash"  />
+                <label for="mode-p-1" class="radio-label">Cash</label>
+                <input id="mode-p-2" name="mode-p" type="radio" value="workshop" />
+                <label for="mode-p-2" class="radio-label">Card</label>
+            </fieldset>
+            <fieldset class="legacy-form-row">
+                <legend>For</legend>
+                <input id="for-1" name="for" type="radio" value="dine-in"  />
+                <label for="for-1" class="radio-label">Dine-in</label>
+                <input id="for-2" name="for" type="radio" value="take-out" />
+                <label for="for-2" class="radio-label">Take-out</label>
+            </fieldset>
+            <div class='form-row'> 
+                <label for='comments'>Comments</label> 
+                <textarea id='comments' name='comments'></textarea> 
+            </div>
+            <button class="order-button">Order Placed</button>
+            <button class="cancel-button">Cancel Order</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
